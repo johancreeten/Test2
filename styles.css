@@ -1,0 +1,150 @@
+/*
+ * Feuille de style pour le questionnaire de maturité à l'IA.
+ *
+ * La mise en page utilise flexbox et des unités relatives afin de
+ * s'adapter aux petits écrans et aux écrans plus larges. Les couleurs
+ * choisies restent sobres pour ne pas détourner l'attention du contenu.
+ */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f8fa;
+  color: #333;
+}
+
+#app {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #555;
+}
+
+/* Conteneur du quiz */
+#quiz-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Barre de progression */
+#progress {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  height: 8px;
+  margin-bottom: 16px;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #007bff;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+/* Numéro de question */
+#question-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Texte de la question */
+#question-text {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+/* Liste des réponses */
+#answers {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#answers li {
+  margin-bottom: 12px;
+}
+
+#answers button {
+  width: 100%;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#answers button:hover {
+  background-color: #1976d2;
+}
+
+/* Conteneur des résultats */
+#result-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#result-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+#result-container p {
+  margin-bottom: 16px;
+  line-height: 1.4;
+}
+
+#result-container ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 16px;
+}
+
+/* Classe utilitaire pour masquer des éléments */
+.hidden {
+  display: none;
+}
+
+/* Ajustements pour les petits écrans */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 0.9rem;
+  }
+  #answers button {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+}

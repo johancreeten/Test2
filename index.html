@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire de maturité à l'IA</title>
+    <!-- Style principal -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome pour les icônes -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-jLKHWMZFFNa8L/OX6tF+xvhdVY90xg0kx1w7oF/SSzmKRwnNMO5UTN447dUkwFk2zLNk+lf/OzwN7PlOzC9ZBQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Questionnaire de maturité à l'IA</h1>
+        <p>
+          Ce questionnaire vous permet d'évaluer votre niveau de maturité dans
+          l'utilisation de l'intelligence artificielle, d'identifier les
+          risques cognitifs potentiels et de découvrir des pistes
+          d'amélioration.
+        </p>
+      </header>
+
+      <!-- Conteneur principal du quiz -->
+      <div id="quiz-container">
+        <div id="progress">
+          <div id="progress-bar"></div>
+        </div>
+        <div id="question-number"></div>
+        <div id="question-text"></div>
+        <ul id="answers"></ul>
+      </div>
+
+      <!-- Résultats -->
+      <div id="result-container" class="hidden">
+        <h2 id="result-title"></h2>
+        <p id="result-description"></p>
+        <h3>Risques cognitifs</h3>
+        <ul id="result-risks"></ul>
+        <h3>Pistes d'amélioration</h3>
+        <ul id="result-improvements"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
